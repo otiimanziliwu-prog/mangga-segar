@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mangga Segar</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', Arial, sans-serif;
+      background-color: #fafdf8;
+      text-align: center;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    /* Header */
+    .hero {
+      background-image: url('mangga-header.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 120px 20px;
+      font-size: 44px;
+      font-weight: 700;
+      text-shadow: 3px 3px 10px rgba(0,0,0,0.6);
+      letter-spacing: 2px;
+      border-bottom: 6px solid #4c9a2a;
+      animation: fadeIn 1.5s ease;
+    }
+
+    /* Animasi fade */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Bagian promo */
+    .promo {
+      background-color: #4c9a2a;
+      color: white;
+      padding: 60px 20px;
+      animation: fadeIn 1.5s ease 0.5s both;
+      border-radius: 0 0 40px 40px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    .promo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .promo-container img {
+      width: 260px;
+      border-radius: 18px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .promo-container img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    }
+
+    .promo-container p {
+      max-width: 450px;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    /* Bagian produk */
+    .produk {
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      padding: 60px 20px 70px;
+      flex-wrap: wrap;
+      background-color: #fff;
+    }
+
+    .card {
+      width: 280px;
+      background-color: #f8fff3;
+      border-radius: 18px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      padding-bottom: 15px;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 18px 18px 0 0;
+    }
+
+    .card p {
+      margin: 12px 0;
+      font-weight: bold;
+      color: #3a3a3a;
+      font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #4c9a2a;
+      color: white;
+      padding: 40px 20px;
+      font-size: 18px;
+      border-top: 6px solid #3f7e21;
+      box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+    }
+
+    footer p {
+      margin: 10px 0;
+    }
+
+    .whatsapp {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      text-decoration: none;
+      padding: 14px 30px;
+      margin-top: 15px;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .whatsapp:hover {
+      background-color: #1ebe5d;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="hero">
+    <h1>Mangga Segar</h1>
+  </header>
+
+  <!-- Promosi -->
+  <section class="promo">
+    <div class="promo-container">
+      <img src="Mangga1.jpeg" alt="Mangga segar">
+      <p>Saya Putra Jaya Ziliwu ingin mempromosikan mangga segar yang manis dan lezat, langsung dari petani ke tangan Anda!</p>
+    </div>
+  </section>
+
+  <!-- Produk -->
+  <section class="produk">
+    <div class="card">
+      <img src="Mangga2.jpg" alt="Mangga berkualitas">
+      <p>Mangga segar dan berkualitas</p>
+    </div>
+    <div class="card">
+      <img src="Mangga3.jpeg" alt="Mulai dari sekarang">
+      <p>Mulai dari sekarang nikmati rasa mangga alami</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Mangga Segar 🍋</p>
+    <p>Klik link di bawah untuk pesan melalui WhatsApp 👇</p>
+    <a class="whatsapp" href="https://wa.me/6281362393816" target="_blank">💬 WhatsApp Admin</a>
+  </footer>
+
+</body>
+</html>
